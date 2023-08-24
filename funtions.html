@@ -26,6 +26,22 @@
         return string1.charAt(string1.length - 1);
     }
 
+function fizzbuzz(){
+    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+}
+    console.log(fizzbuzz());
     console.log(lastletter('benji is so cool its funny'))
     console.log(capitalize('capitalize this'))
     console.log(multiply(45,27));
